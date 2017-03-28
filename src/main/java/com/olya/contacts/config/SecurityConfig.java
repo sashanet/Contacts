@@ -33,7 +33,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .exceptionHandling().accessDeniedHandler(accessDeniedHandler())
                 .and()
-                .exceptionHandling().accessDeniedPage("/accessDenied")
+                .exceptionHandling().accessDeniedPage("/accessDenied.jsp")
                 .and()
                 .csrf().disable();
     }
